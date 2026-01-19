@@ -90,8 +90,43 @@
 // const ab = ["programmer", "am", "I"]
 // console.log(ab.reverse())                           //reverse() - реверсирует массив и меняет его
 
-const a = [1,2,0,4,1,0]
-const b = ["т","п","в","а"]
-console.log(b.sort())                              //sort - сортировка массива по остатку, изменяет массив
-console.log(a.sort())
+// const a = [1,2,0,4,1,0]
+// const b = ["т","п","в","а"]
+// console.log(b.sort())                              //sort - сортировка массива по остатку, изменяет массив
+// console.log(a.sort())
 
+// ===================<<Cтрелочная функция>>==========================
+
+// const colors = ['красный','зелёный','синий'] 
+// colors.forEach((element,index,arr)=>{           //forEach(()=>{}) - применяет функцию-аргумент для каждого массива и переберает их элементы
+//     console.log(`${index}: ${element}`)
+//     console.log(arr)
+// })
+
+// //array.some(()={});                  //some - проверяет, есть ли в массиве хотя бы один элемент, удовлетворяющий условию
+// const numbers = [1,2,3,6,8];
+// const hasEven = numbers.some((element)=>{ return element%2 === 0 })
+// console.log(hasEven)
+
+//array.every(()=>{})                 //every - проверяет, удовлетворяют ли ВСЕ элементы условию (возвращает true или false)
+// const nums =[2,4,6]
+// const allEven = nums.every((element)=>{ return element%2 === 0})
+// console.log(allEven)
+
+// ===================<<Преобразование массивов>>==========================
+
+// const oldNumbers = [1,2,3]
+// const newNumbers= oldNumbers.map((elem)=>{return elem*2})   //.map - изменяет массив, в котором содержится только часть элементов исходного массива, которая соответствует условию  //.map
+// console.log(newNumbers)
+
+// const unFiltred = [1,4,8,10]
+// const filtred= unFiltred.filter((elem)=>{return elem>5})     //.filter - возвращает масив, в котором содежится только часть элементов исходного массива, которая соответствует условию 
+// console.log(filtred)
+
+// const reduceNumbers = [1,2,3,4,5,6,7,8,9]
+// const sum = reduceNumbers.reduce((acc, elem)=>{return acc + elem}, 0)   //acc = 0
+// console.log(sum)                                                        //.reduce - сворачивает массив до одного значения (число или строка, или иной массив)
+
+// const words = ['Привет','ад','!']
+// const sentence = words.reduce((acc, elem)=>{return acc + ' ' + elem},'') 
+// console.log(sentence)
