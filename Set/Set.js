@@ -42,22 +42,22 @@
 
 // Пример 1 Убрать из массива повторяющиеся элементы
 
-const someMass = ['some1','some2','some3','some1']
+// const someMass = ['some1','some2','some3','some1']
 
-function uniqueItem(arr){
-    const uniqueItemSet(arr) = new Set(arr)
-    return [...uniqueItemSet]
-}
+// function uniqueItem(arr){
+//     const uniqueItemSet(arr) = new Set(arr)
+//     return [...uniqueItemSet]                          //... - спрет, деструкторизирует массив (убирает скобки и делает обычное перечисление)
+// }
 
-console.log(uniqueItem(someMass))
+// console.log(uniqueItem(someMass))
 
-//Пример 2 Проверка уникальности массива
+// //Пример 2 Проверка уникальности массива
 
-const array = [1,2,3,2,4,5,6,7]
+// const array = [1,2,3,2,4,5,6,7]
 
-function hasDoubles(arr){
-    const set = new Set(arr)
-    return set.size !== arr.lenght
-}
+// function hasDoubles(arr){
+//     const set = new Set(arr)
+//     return set.size !== arr.lenght
+// }
 
-console.log(hasDoubles(array))
+// console.log(hasDoubles(array))
