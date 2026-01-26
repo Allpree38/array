@@ -39,14 +39,14 @@ const userExists = registeredUsers.includes(usernameToCheck);
 console.log(`Пользователь ${usernameToCheck} существует: ${userExists}`);
 //========================================
 console.log("№7");
-const hashtags = ['#жара', '#отдых', '#жара', '#лето', '#отдых'];
-const uniqueHashtags = [...new Set(hashtags)];
-console.log(uniqueHashtags); 
+const Tags = ['#жара', '#отдых', '#жара', '#лето', '#отдых'];
+const uniqueTags = [...new Set(Tags)];
+console.log(uniqueTags); 
 //========================================
 console.log("№8");
 const allOptions = ['VIP', 'Standard', 'Economy'];
 const userOptions = ['VIP', 'Standard'];
-function hasAllOptions(arr1, arr2){
+function bothAllOptions(arr1, arr2){
     if (arr1.length === arr2.length){
         return true
     }
