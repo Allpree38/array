@@ -59,4 +59,78 @@ const student = {
     }
 }
 console.log(student.newGrades())
+//=============================================
+console.log('№6')
+const VideoSetting = {
+    Graphic: 'Medium',
+    Moution_blur: 'on',
+    Render: 'FXAA'
+}
+const AudioSetting = {
+    Voice_chat: 80,
+    Game: 60
+}
+console.log(Object.assign(VideoSetting,AudioSetting))
+//=============================================
+console.log('№7')
+const person = {
+    Name:'Вадим',
+    Age: 19,
+    sayHello: function(){
+        return 'Здравствуйте, я ' + this.Name
+    }
+}
+console.log(person.sayHello())
+//=============================================
+console.log('№8')
+//=============================================
+console.log('№9')
+const counter = {
+    count: 1,
+    increment: function() {
+        this.count++;
+        return this;
+    },
+    decrement: function() {
+        if (this.count > 0) {
+            this.count--;
+        }
+        return this;
+    },
+    reset: function() {
+        this.count = 0;
+        return this;
+    }
+};
 
+console.log(counter.count); 
+counter.increment();
+console.log(counter.count); 
+counter.decrement();
+console.log(counter.count); 
+counter.reset();
+console.log(counter.count); 
+//=============================================
+console.log('№10')
+const product = {
+    price:100,
+    applyDiscount: function(percent) {
+
+        if (percent < 0 || percent > 100) {
+            console.log('Процент скидки не может быть больше 100');
+        }
+        
+
+        const discountAmount = this.price * (percent / 100);
+        
+
+        this.price -= discountAmount;
+        
+        return this.price;
+    }
+};
+
+
+console.log('Исходная цена:', product.price);  
+product.applyDiscount(10);  
+console.log('Цена после скидки:', product.price); 
