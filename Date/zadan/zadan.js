@@ -13,10 +13,10 @@ function happyBirthday(personBirthDate){
     const hours = Math.floor(milliseconds % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
     let message = 'До др осталось: ';
     if (days > 0) {
-        message += ${days} Дней 
+        message += `${days} Дней`
     }
     if (hours > 0 || days > 0){
-        message += ${hours} Часов
+        message += `${hours} Часов`
     }
     console.log(message)
 }
@@ -29,7 +29,7 @@ function workTime(start, end){
         const w1 = new Date(start.getFullYear(), start.getMonth(), start.getDate(), start.getHours(), start.getMinutes());
     const w2 = new Date(end.getFullYear(), end.getMonth(), end.getDate(), end.getHours(), end.getMinutes());
     const miliseconds = w2 - w1;
-    const hours = Math.floor(miliseconds / (1000 × 60 × 60))
+    const hours = Math.floor(miliseconds / (1000 * 60 * 60))
     const message = `Работа заняла ${hours} часов`
     console.log(message)
 }

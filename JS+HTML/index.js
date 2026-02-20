@@ -1,0 +1,1 @@
+cosnt text = document.getElementById("text")
